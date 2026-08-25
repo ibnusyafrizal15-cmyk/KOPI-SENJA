@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KOPI SENJA — Tempat Kecil Untuk Cerita Yang Panjang | Tangerang</title>
+  <meta name="description" content="Kopi Senja adalah tempat kopi modern dan estetis di Tangerang, Banten. Nikmati kopi spesial, makanan lezat, tempat kerja nyaman, dan suasana hangat.">
+  <meta name="keywords" content="kopi senja, cafe tangerang, coffee shop gading serpong, wfh cafe tangerang, tempat nongkrong tangerang">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Analytics 4 (GA4) -->
+  <!-- GANTI "G-XXXXXXX" di bawah ini dengan Measurement ID asli kamu dari analytics.google.com -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXX');
+  </script>
+</head>
+<body data-active-package="starter">
+
+  <!-- DEMO HEADER BANNER WITH TOP PACKAGE SWITCHER BUTTONS -->
+  <aside class="demo-banner" id="demo-banner">
+    <div class="container demo-banner-content">
+      <div class="demo-badge">
+        <i class="fa-solid fa-laptop-code"></i> CLIENT DEMO MODE
+      </div>
+      <div class="demo-status">
+        Paket Aktif: <strong id="demo-status-text">STARTER PACKAGE</strong>
+      </div>
+      
+      <!-- TOP PACKAGE SWITCHER BUTTONS -->
+      <div class="demo-package-buttons">
+        <button type="button" class="demo-pkg-btn active" data-switch-to="starter" id="top-btn-starter">
+          <i class="fa-solid fa-layer-group"></i> STARTER
+        </button>
+        <button type="button" class="demo-pkg-btn" data-switch-to="growth" id="top-btn-growth">
+          <i class="fa-solid fa-chart-line"></i> GROWTH
+        </button>
+        <button type="button" class="demo-pkg-btn" data-switch-to="premium" id="top-btn-premium">
+          <i class="fa-solid fa-sparkles"></i> PREMIUM (AI)
+        </button>
+      </div>
+
+      <div class="demo-note">
+        <i class="fa-solid fa-circle-info"></i> Switcher di atas atau di bawah footer dapat digunakan saat presentasi.
+      </div>
+    </div>
+  </aside>
+
+  <!-- STICKY NAVBAR -->
+  <header class="navbar-header" id="navbar-header">
+    <nav class="navbar container">
+      <a href="index.html#hero" class="nav-brand">
+        <i class="fa-solid fa-mug-hot brand-icon"></i>
+        <span class="brand-name">KOPI SENJA</span>
+      </a>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html#hero" class="nav-link">Beranda</a></li>
+        <li><a href="index.html#about" class="nav-link">Tentang Kami</a></li>
+        <li><a href="menu.html" class="nav-link active">Menu Digital</a></li>
+        <li><a href="index.html#gallery" class="nav-link">Galeri</a></li>
+        <li><a href="index.html#facilities" class="nav-link">Fasilitas</a></li>
+        <li class="pkg-growth-up"><a href="index.html#reviews" class="nav-link">Ulasan</a></li>
+        <li class="pkg-growth-up"><a href="index.html#reservation" class="nav-link">Reservasi</a></li>
+        <li class="pkg-premium-only"><a href="index.html#ai-assistant" class="nav-link nav-highlight"><i class="fa-solid fa-sparkles"></i> AI Assistant</a></li>
+        <li><a href="index.html#location" class="nav-link">Lokasi</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="hamburger" id="hamburger-btn" aria-label="Toggle Navigation Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="menu-section section-padding" id="menu">
+      <div class="container">
+        <a href="index.html" class="btn btn-outline" style="margin-bottom:1.5rem;display:inline-flex;">
+          <i class="fa-solid fa-arrow-left"></i>&nbsp; Kembali ke Beranda
+        </a>
+      </div>
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag"><i class="fa-solid fa-utensils"></i> Kategori Hidangan</span>
+          <h2 class="section-title">Menu Digital Kopi Senja</h2>
+          <p class="section-subtitle">Semua hidangan dibuat segar setiap hari dengan bahan-bahan berkualitas tinggi.</p>
+
+          <!-- MENU FILTER TABS -->
+          <div class="menu-tabs">
+            <button class="menu-tab-btn active" data-filter="all">Semua Menu</button>
+            <button class="menu-tab-btn" data-filter="coffee">Coffee</button>
+            <button class="menu-tab-btn" data-filter="non-coffee">Non-Coffee</button>
+            <button class="menu-tab-btn" data-filter="food">Food & Pastry</button>
+          </div>
+        </div>
+
+        <div class="menu-grid" id="menu-grid">
+          <!-- COFFEE ITEM 1 -->
+          <div class="menu-card" data-category="coffee">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=600&q=80" alt="Caramel Latte" loading="lazy">
+              <span class="menu-category-badge">Coffee</span>
+              <span class="menu-bestseller-tag">Bestseller</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-title-row">
+                <h3>Caramel Latte</h3>
+                <span class="menu-price">Rp 28.000</span>
+              </div>
+              <p class="menu-desc">Espresso segar dipadu susu creamy dan sirup karamel gurih manis yang lembut di lidah.</p>
+            </div>
+          </div>
+
+          <!-- COFFEE ITEM 2 -->
+          <div class="menu-card" data-category="coffee">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1534778101976-62847782c213?auto=format&fit=crop&w=600&q=80" alt="Cafe Latte" loading="lazy">
+              <span class="menu-category-badge">Coffee</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-title-row">
+                <h3>Cafe Latte</h3>
+                <span class="menu-price">Rp 26.000</span>
+              </div>
+              <p class="menu-desc">Perpaduan seimbang antara double shot espresso dan microfoam milk segar yang halus.</p>
+            </div>
+          </div>
+
+          <!-- COFFEE ITEM 3 -->
+          <div class="menu-card" data-category="coffee">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&q=80" alt="Americano" loading="lazy">
+              <span class="menu-category-badge">Coffee</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-title-row">
+                <h3>Americano</h3>
+                <span class="menu-price">Rp 22.000</span>
+              </div>
+              <p class="menu-desc">Espresso murni diekstrak sempurna dengan tambahan air mineral panas/es segar.</p>
+            </div>
+          </div>
+
+          <!-- COFFEE ITEM 4 -->
+          <div class="menu-card" data-category="coffee">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=600&q=80" alt="Cappuccino" loading="lazy">
+              <span class="menu-category-badge">Coffee</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-title-row">
+                <h3>Cappuccino</h3>
+                <span class="menu-price">Rp 28.000</span>
+              </div>
+              <p class="menu-desc">Kopi kental dengan lapisan milk foam tebal dan taburan bubuk cokelat organik di atasnya.</p>
+            </div>
+          </div>
+
+          <!-- NON-COFFEE ITEM 1 -->
+          <div class="menu-card" data-category="non-coffee">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1536256263959-770b48d82b0a?auto=format&fit=crop&w=600&q=80" alt="Matcha Latte" loading="lazy">
+              <span class="menu-category-badge">Non-Coffee</span>
+              <span class="menu-bestseller-tag">Popular</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-title-row">
+                <h3>Matcha Latte</h3>
+                <span class="menu-price">Rp 28.000</span>
+              </div>
+              <p class="menu-desc">Bubuk Matcha kualitas premium impor Kyoto berpadu rasa creamy dan manis susu segar.</p>
+            </div>
+          </div>
+
+          <!-- NON-COFFEE ITEM 2 -->
+          <div class="menu-card" data-category="non-coffee">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1542990253-0d0f5be5f0ed?auto=format&fit=crop&w=600&q=80" alt="Signature Chocolate" loading="lazy">
+              <span class="menu-category-badge">Non-Coffee</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-title-row">
+                <h3>Signature Chocolate</h3>
+                <span class="menu-price">Rp 26.000</span>
+              </div>
+              <p class="menu-desc">Cokelat pekat pilihan dengan tekstur kental manis yang menghangatkan suasana.</p>
+            </div>
+          </div>
+
+          <!-- FOOD ITEM 1 -->
+          <div class="menu-card" data-category="food">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=600&q=80" alt="Butter Croissant" loading="lazy">
+              <span class="menu-category-badge">Pastry</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-title-row">
+                <h3>Butter Croissant</h3>
+                <span class="menu-price">Rp 22.000</span>
+              </div>
+              <p class="menu-desc">Croissant mentega khas Prancis yang gurih, renyah di luar, dan sangat lembut di dalam.</p>
+            </div>
+          </div>
+
+          <!-- FOOD ITEM 2 -->
+          <div class="menu-card" data-category="food">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80" alt="Chicken Rice Bowl" loading="lazy">
+              <span class="menu-category-badge">Food</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-title-row">
+                <h3>Chicken Rice Bowl</h3>
+                <span class="menu-price">Rp 35.000</span>
+              </div>
+              <p class="menu-desc">Nasi hangat dengan potongan ayam renyah saus teriyaki gurih & telor mata sapi segar.</p>
+            </div>
+          </div>
+
+          <!-- FOOD ITEM 3 -->
+          <div class="menu-card" data-category="food">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?auto=format&fit=crop&w=600&q=80" alt="Classic French Toast" loading="lazy">
+              <span class="menu-category-badge">Food</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-title-row">
+                <h3>Classic French Toast</h3>
+                <span class="menu-price">Rp 30.000</span>
+              </div>
+              <p class="menu-desc">Roti panggang mentega empuk disajikan dengan lelehan butter dan murni maple syrup.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <div class="nav-brand">
+            <i class="fa-solid fa-mug-hot brand-icon"></i>
+            <span class="brand-name">KOPI SENJA</span>
+          </div>
+          <p class="footer-tagline">"Tempat kecil untuk cerita yang panjang."</p>
+          <p class="footer-desc">Specialty coffee shop & kitchen di Tangerang, Banten. Menyajikan racikan kopi terbaik, makanan hangat, dan ruang kerja berkonsep estetis.</p>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Navigasi Cepat</h4>
+          <ul>
+            <li><a href="index.html#hero">Beranda</a></li>
+            <li><a href="index.html#about">Tentang Kami</a></li>
+            <li><a href="menu.html">Menu Digital</a></li>
+            <li><a href="index.html#gallery">Galeri</a></li>
+            <li><a href="index.html#facilities">Fasilitas Cafe</a></li>
+            <li><a href="index.html#location">Lokasi & Jam Buka</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact-col">
+          <h4>Hubungi Kopi Senja</h4>
+          <p><i class="fa-solid fa-location-dot"></i> Gading Serpong, Tangerang, Banten</p>
+          <p><i class="fa-solid fa-clock"></i> Buka Setiap Hari: 08.00 - 22.00 WIB</p>
+          <p><i class="fa-brands fa-whatsapp"></i> WhatsApp: 0812-3456-7890</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-content">
+          <p>&copy; 2026 KOPI SENJA Tangerang. All rights reserved.</p>
+          <p class="demo-footer-note"><i class="fa-solid fa-laptop-code"></i> Freelance Web Developer Demo Template • Created with Vanilla HTML, CSS & JS.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/6281234567890?text=Halo%20Kopi%20Senja,%20saya%20ingin%20menanyakan%20reservasi%20tempat" target="_blank" rel="noopener" class="floating-wa-btn" id="floating-wa-btn" aria-label="Reservasi Sekarang via WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="floating-wa-label">Reservasi Sekarang</span>
+  </a>
+
+
+  <!-- JAVASCRIPT -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KOPI SENJA — Tempat Kecil Untuk Cerita Yang Panjang | Tangerang</title>
+  <meta name="description" content="Kopi Senja adalah tempat kopi modern dan estetis di Tangerang, Banten. Nikmati kopi spesial, makanan lezat, tempat kerja nyaman, dan suasana hangat.">
+  <meta name="keywords" content="kopi senja, cafe tangerang, coffee shop gading serpong, wfh cafe tangerang, tempat nongkrong tangerang">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Analytics 4 (GA4) -->
+  <!-- GANTI "G-XXXXXXX" di bawah ini dengan Measurement ID asli kamu dari analytics.google.com -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXX');
+  </script>
+</head>
+<body data-active-package="starter">
+
+  <!-- DEMO HEADER BANNER WITH TOP PACKAGE SWITCHER BUTTONS -->
+  <aside class="demo-banner" id="demo-banner">
+    <div class="container demo-banner-content">
+      <div class="demo-badge">
+        <i class="fa-solid fa-laptop-code"></i> CLIENT DEMO MODE
+      </div>
+      <div class="demo-status">
+        Paket Aktif: <strong id="demo-status-text">STARTER PACKAGE</strong>
+      </div>
+      
+      <!-- TOP PACKAGE SWITCHER BUTTONS -->
+      <div class="demo-package-buttons">
+        <button type="button" class="demo-pkg-btn active" data-switch-to="starter" id="top-btn-starter">
+          <i class="fa-solid fa-layer-group"></i> STARTER
+        </button>
+        <button type="button" class="demo-pkg-btn" data-switch-to="growth" id="top-btn-growth">
+          <i class="fa-solid fa-chart-line"></i> GROWTH
+        </button>
+        <button type="button" class="demo-pkg-btn" data-switch-to="premium" id="top-btn-premium">
+          <i class="fa-solid fa-sparkles"></i> PREMIUM (AI)
+        </button>
+      </div>
+
+      <div class="demo-note">
+        <i class="fa-solid fa-circle-info"></i> Switcher di atas atau di bawah footer dapat digunakan saat presentasi.
+      </div>
+    </div>
+  </aside>
+
+  <!-- STICKY NAVBAR -->
+  <header class="navbar-header" id="navbar-header">
+    <nav class="navbar container">
+      <a href="#hero" class="nav-brand">
+        <i class="fa-solid fa-mug-hot brand-icon"></i>
+        <span class="brand-name">KOPI SENJA</span>
+      </a>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#hero" class="nav-link active">Beranda</a></li>
+        <li><a href="#about" class="nav-link">Tentang Kami</a></li>
+        <li><a href="menu.html" class="nav-link">Menu Digital</a></li>
+        <li><a href="#gallery" class="nav-link">Galeri</a></li>
+        <li><a href="#facilities" class="nav-link">Fasilitas</a></li>
+        <li class="pkg-growth-up"><a href="#reviews" class="nav-link">Ulasan</a></li>
+        <li class="pkg-growth-up"><a href="#reservation" class="nav-link">Reservasi</a></li>
+        <li class="pkg-premium-only"><a href="#ai-assistant" class="nav-link nav-highlight"><i class="fa-solid fa-sparkles"></i> AI Assistant</a></li>
+        <li><a href="#location" class="nav-link">Lokasi</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="hamburger" id="hamburger-btn" aria-label="Toggle Navigation Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="hero-bg-overlay"></div>
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <i class="fa-solid fa-store"></i> Specialty Coffee & Kitchen • Tangerang
+          </div>
+          <h1 class="hero-title">KOPI SENJA</h1>
+          <p class="hero-subtitle">"Tempat kecil untuk cerita yang panjang."</p>
+          <p class="hero-description">Coffee, comfort, and conversations in the heart of Tangerang. Rasakan kenikmatan racikan kopi pilihan, makanan hangat, dan suasana yang pas untuk bekerja maupun bersantai.</p>
+
+          <div class="hero-buttons">
+            <a href="menu.html" class="btn btn-primary btn-lg" id="hero-primary-btn">
+              <i class="fa-solid fa-book-open"></i> <span>Explore Menu</span>
+            </a>
+            <a href="#location" class="btn btn-secondary btn-lg" id="hero-secondary-btn">
+              <i class="fa-solid fa-compass"></i> Visit Us
+            </a>
+          </div>
+
+          <div class="hero-quick-info">
+            <div class="info-item">
+              <i class="fa-solid fa-clock"></i>
+              <div>
+                <strong>Buka Setiap Hari</strong>
+                <span>08.00 – 22.00 WIB</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fa-solid fa-wifi"></i>
+              <div>
+                <strong>Free High-Speed Wi-Fi</strong>
+                <span>Colokan Listrik Lengkap</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fa-solid fa-map-pin"></i>
+              <div>
+                <strong>Gading Serpong</strong>
+                <span>Tangerang, Banten</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about-section section-padding" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1000&q=80" alt="Suasana Kopi Senja" class="about-img main-img" loading="lazy">
+            <div class="about-img-accent">
+              <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600&q=80" alt="Specialty Coffee Kopi Senja" loading="lazy">
+            </div>
+            <div class="experience-badge">
+              <span class="exp-number">100%</span>
+              <span class="exp-text">Biji Kopi Nusantara Pilihan</span>
+            </div>
+          </div>
+
+          <div class="about-content">
+            <span class="section-tag"><i class="fa-solid fa-heart"></i> Cerita Kami</span>
+            <h2 class="section-title">Lebih Dari Sekadar Secangkir Kopi</h2>
+            <p class="about-lead">Kopi Senja lahir dari keinginan sederhana: menghadirkan ruang hangat di tengah sibuknya Kota Tangerang untuk beristirahat, bertukar cerita, dan merajut ide.</p>
+            <p>Kami menyajikan biji kopi lokal Nusantara terbaik yang disangrai dengan presisi tinggi oleh barista berpengalaman. Dipadukan dengan interior berkonsep hangat, pencahayaan lembut, dan musik pilihan, Kopi Senja dirancang menjadi rumah kedua Anda.</p>
+
+            <div class="about-features">
+              <div class="about-feature-card">
+                <i class="fa-solid fa-seedling"></i>
+                <div>
+                  <h4>Biji Kopi Lokal Premium</h4>
+                  <p>Dipetik langsung dari petani lokal Aceh, Toraja, dan Bali.</p>
+                </div>
+              </div>
+              <div class="about-feature-card">
+                <i class="fa-solid fa-couch"></i>
+                <div>
+                  <h4>Suasana Homey & Estetis</h4>
+                  <p>Interior hangat nan minimalis yang instagramable & nyaman.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIGITAL MENU SECTION -->
+    <section class="menu-section section-padding" id="menu">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag"><i class="fa-solid fa-utensils"></i> Kategori Hidangan</span>
+          <h2 class="section-title">Menu Digital Kopi Senja</h2>
+          <p class="section-subtitle">Racikan kopi spesial, minuman non-kopi, hingga pastry hangat — semua dibuat segar setiap hari dengan bahan berkualitas tinggi.</p>
+          <a href="menu.html" class="btn btn-primary btn-lg" style="margin-top:1.5rem;">
+            <i class="fa-solid fa-book-open"></i> Lihat Menu Lengkap
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section class="gallery-section section-padding" id="gallery">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag"><i class="fa-solid fa-camera"></i> Suasana & Ambience</span>
+          <h2 class="section-title">Galeri Kopi Senja</h2>
+          <p class="section-subtitle">Intip sudut-sudut estetis dan momen hangat di cafe kami.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item large">
+            <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=800&q=80" alt="Interior Cafe" loading="lazy">
+            <div class="gallery-overlay"><span>Area Indoor Utama</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600&q=80" alt="Latte Art Detail" loading="lazy">
+            <div class="gallery-overlay"><span>Latte Art Presisi</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=600&q=80" alt="Orang Kerja Laptop" loading="lazy">
+            <div class="gallery-overlay"><span>Work & Study Corner</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?auto=format&fit=crop&w=600&q=80" alt="Area Outdoor" loading="lazy">
+            <div class="gallery-overlay"><span>Outdoor Garden Area</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1517256064527-09c73fc73e38?auto=format&fit=crop&w=600&q=80" alt="Fresh Bakery Pastry" loading="lazy">
+            <div class="gallery-overlay"><span>Fresh Baked Pastry</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FACILITIES SECTION -->
+    <section class="facilities-section section-padding" id="facilities">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag"><i class="fa-solid fa-shield-halved"></i> Kenyamanan Anda</span>
+          <h2 class="section-title">Fasilitas Yang Tersedia</h2>
+          <p class="section-subtitle">Semua fasilitas dirancang agar kunjungan Anda semakin berkesan.</p>
+        </div>
+
+        <div class="facilities-grid">
+          <div class="facility-card">
+            <div class="facility-icon"><i class="fa-solid fa-wifi"></i></div>
+            <h3>Free Wi-Fi High Speed</h3>
+            <p>Koneksi internet serat optik cepat up to 100 Mbps, cocok untuk Zoom call atau streaming.</p>
+          </div>
+          <div class="facility-card">
+            <div class="facility-icon"><i class="fa-solid fa-plug"></i></div>
+            <h3>Power Outlets Melimpah</h3>
+            <p>Colokan listrik tersedia hampir di setiap meja indoor untuk mengisi daya laptop & smartphone.</p>
+          </div>
+          <div class="facility-card">
+            <div class="facility-icon"><i class="fa-solid fa-snowflake"></i></div>
+            <h3>Full AC Indoor Area</h3>
+            <p>Ruangan indoor ber-AC sejuk dengan air purifier untuk kenyamanan bernapas.</p>
+          </div>
+          <div class="facility-card">
+            <div class="facility-icon"><i class="fa-solid fa-chair"></i></div>
+            <h3>Indoor Seating Ergonomis</h3>
+            <p>Sofa empuk dan kursi kayu ergonomis yang nyaman digunakan duduk berjam-jam.</p>
+          </div>
+          <div class="facility-card">
+            <div class="facility-icon"><i class="fa-solid fa-sun"></i></div>
+            <h3>Outdoor Garden Area</h3>
+            <p>Area terbuka dengan tanaman hijau asri yang juga difungsikan sebagai smoking area.</p>
+          </div>
+          <div class="facility-card">
+            <div class="facility-icon"><i class="fa-solid fa-square-parking"></i></div>
+            <h3>Parkir Luas & Aman</h3>
+            <p>Area parkir dedicated gratis untuk mobil dan motor lengkap dengan penjagaan juru parkir.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS & TESTIMONIALS (GROWTH & PREMIUM ONLY) -->
+    <section class="reviews-section section-padding pkg-growth-up" id="reviews">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag"><i class="fa-solid fa-star"></i> Kata Mereka</span>
+          <h2 class="section-title">Ulasan Pelanggan Setia</h2>
+          <p class="section-subtitle">Pengalaman nyata para pengunjung Kopi Senja Tangerang.</p>
+        </div>
+
+        <div class="reviews-grid">
+          <!-- REVIEW 1 -->
+          <div class="review-card">
+            <div class="review-rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="review-text">"Tempat kerja paling nyaman di Gading Serpong! Wi-Fi kencang, colokan di mana-mana, dan Caramel Latte-nya manisnya pas banget di tenggorokan. Pasti bakal sering ke sini!"</p>
+            <div class="review-user">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80" alt="Maya S." loading="lazy">
+              <div>
+                <h4>Maya S.</h4>
+                <span>Remote Graphic Designer</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- REVIEW 2 -->
+          <div class="review-card">
+            <div class="review-rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="review-text">"Croissant-nya renyah banget dan beneran fresh dari oven. Suasana malam harinya syahdu banget ditemani lampu-lampu outdoor hangat. Cocok banget buat nongkrong santai."</p>
+            <div class="review-user">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Dimas P." loading="lazy">
+              <div>
+                <h4>Dimas P.</h4>
+                <span>Mahasiswa Universitas Matana</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- REVIEW 3 -->
+          <div class="review-card">
+            <div class="review-rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="review-text">"Pelayanan mas dan mbaknya sangat ramah dan responsif. Sistem booking lewat websitunya cepat banget via WhatsApp, meja indoor langsung siap pas kita datang."</p>
+            <div class="review-user">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Sarah & Rian" loading="lazy">
+              <div>
+                <h4>Sarah & Rian</h4>
+                <span>Couple Visitors</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESERVATION SECTION (GROWTH & PREMIUM ONLY) -->
+    <section class="reservation-section section-padding pkg-growth-up" id="reservation">
+      <div class="container">
+        <div class="reservation-grid">
+          <div class="reservation-info">
+            <span class="section-tag"><i class="fa-solid fa-calendar-check"></i> Booking Meja Instan</span>
+            <h2>Reservasi Tempat Di Kopi Senja</h2>
+            <p>Ingin memastikan ketersediaan tempat untuk meeting, kerja kelompok, atau acara santai bersama teman? Isi form reservasi berikut untuk terhubung langsung dengan tim kami via WhatsApp.</p>
+
+            <div class="res-benefits-list">
+              <div class="res-benefit-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Tanpa Biaya Reservasi Tambahan</span>
+              </div>
+              <div class="res-benefit-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Konfirmasi Otomatis via WhatsApp</span>
+              </div>
+              <div class="res-benefit-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Pilih Area Seating (Indoor / Outdoor)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="reservation-form-wrapper">
+            <div class="form-card">
+              <div class="form-card-header">
+                <h3>Formulir Reservasi</h3>
+                <p>Silakan lengkapi data kunjungan Anda.</p>
+              </div>
+
+              <form id="reservation-form" novalidate>
+                <div class="form-group">
+                  <label for="res-name">Nama Lengkap <span class="required">*</span></label>
+                  <input type="text" id="res-name" class="form-control" placeholder="Contoh: Budi Santoso" required>
+                  <span class="error-msg" id="err-res-name">Nama wajib diisi.</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="res-phone">Nomor WhatsApp <span class="required">*</span></label>
+                  <input type="tel" id="res-phone" class="form-control" placeholder="Contoh: 081234567890" required>
+                  <span class="error-msg" id="err-res-phone">Nomor WhatsApp valid wajib diisi.</span>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group col-half">
+                    <label for="res-date">Tanggal Kunjungan <span class="required">*</span></label>
+                    <input type="date" id="res-date" class="form-control" required>
+                    <span class="error-msg" id="err-res-date">Pilih tanggal.</span>
+                  </div>
+
+                  <div class="form-group col-half">
+                    <label for="res-time">Jam Kunjungan <span class="required">*</span></label>
+                    <input type="time" id="res-time" class="form-control" required>
+                    <span class="error-msg" id="err-res-time">Pilih jam.</span>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group col-half">
+                    <label for="res-guests">Jumlah Tamu <span class="required">*</span></label>
+                    <select id="res-guests" class="form-control" required>
+                      <option value="1 Orang">1 Orang</option>
+                      <option value="2 Orang" selected>2 Orang</option>
+                      <option value="3-4 Orang">3 - 4 Orang</option>
+                      <option value="5-8 Orang">5 - 8 Orang</option>
+                      <option value=">8 Orang (Group)">> 8 Orang (Rombongan)</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group col-half">
+                    <label for="res-seating">Area Tempat Duduk</label>
+                    <select id="res-seating" class="form-control">
+                      <option value="Indoor AC">Indoor AC (Dekat Colokan)</option>
+                      <option value="Outdoor Garden">Outdoor Garden (Smoking Area)</option>
+                      <option value="Bebas / Mana Saja">Bebas / Mana Saja</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="res-notes">Catatan Khusus (Opsional)</label>
+                  <textarea id="res-notes" class="form-control" rows="3" placeholder="Contoh: Butuh meja besar untuk meeting laptop / bawa kue ulang tahun"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-whatsapp btn-block btn-lg" id="btn-submit-res">
+                  <i class="fa-brands fa-whatsapp"></i> Reserve via WhatsApp
+                </button>
+                <p class="form-privacy-note"><i class="fa-solid fa-lock"></i> Pesan reservasi akan langsung diformat dan dikirim ke nomor WhatsApp Kopi Senja (081234567890).</p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI CUSTOMER ASSISTANT CHATBOT (PREMIUM ONLY) -->
+    <section class="ai-assistant-section section-padding pkg-premium-only" id="ai-assistant">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag"><i class="fa-solid fa-robot"></i> Asisten AI 24/7</span>
+          <h2 class="section-title">Kopi Senja AI Assistant</h2>
+          <p class="section-subtitle">"Ask anything about our cafe." Tanya jam buka, menu terfavorit, colokan listrik, hingga lokasi secara instan.</p>
+        </div>
+
+        <div class="chatbot-wrapper">
+          <div class="chatbot-window">
+            <!-- CHATBOT HEADER -->
+            <div class="chatbot-header">
+              <div class="chatbot-avatar">
+                <i class="fa-solid fa-brain"></i>
+                <span class="online-indicator"></span>
+              </div>
+              <div class="chatbot-meta">
+                <h3>Kopi Senja AI Asisten</h3>
+                <span class="chatbot-status">Online • Menjawab dalam 1 detik</span>
+              </div>
+              <div class="chatbot-badge">SIMULATED AI DEMO</div>
+            </div>
+
+            <!-- CHATBOT MESSAGES CONTAINER -->
+            <div class="chatbot-messages" id="chatbot-messages">
+              <!-- WELCOME MESSAGE -->
+              <div class="chat-message ai-message">
+                <div class="msg-avatar"><i class="fa-solid fa-mug-hot"></i></div>
+                <div class="msg-content">
+                  <p>Halo! 👋 Selamat datang di Kopi Senja Tangerang. Aku adalah Asisten AI Kopi Senja. Ada yang bisa aku bantu hari ini?</p>
+                  <span class="msg-time">Baru saja</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- CHATBOT TYPING INDICATOR -->
+            <div class="chat-typing hidden" id="chat-typing">
+              <div class="msg-avatar"><i class="fa-solid fa-mug-hot"></i></div>
+              <div class="typing-bubble">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="typing-text">AI Kopi Senja sedang mengetik...</span>
+              </div>
+            </div>
+
+            <!-- SUGGESTION CHIPS -->
+            <div class="chatbot-suggestions">
+              <span class="sug-label"><i class="fa-solid fa-lightbulb"></i> Rekomendasi Pertanyaan:</span>
+              <div class="chips-container">
+                <button class="chat-chip" data-question="Rekomendasi menu kopi manis?">"Rekomendasi menu?"</button>
+                <button class="chat-chip" data-question="Jam buka sampai jam berapa?">"Jam buka?"</button>
+                <button class="chat-chip" data-question="Ada Wi-Fi dan colokan listrik?">"Ada Wi-Fi?"</button>
+                <button class="chat-chip" data-question="Lokasinya ada dimana?">"Lokasi?"</button>
+                <button class="chat-chip" data-question="Bagaimana cara reservasi tempat?">"Bisa reservasi?"</button>
+              </div>
+            </div>
+
+            <!-- CHATBOT INPUT FORM -->
+            <form class="chatbot-input-row" id="chatbot-form">
+              <input type="text" id="chat-input" class="chat-input" placeholder="Tetik pertanyaanmu di sini... (cth: Nggak suka kopi pahit)" autocomplete="off" required>
+              <button type="submit" class="chat-send-btn" aria-label="Kirim Pesan">
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+    </section>
+
+    <!-- LOCATION & HOURS SECTION -->
+    <section class="location-section section-padding" id="location">
+      <div class="container">
+        <div class="location-grid">
+          <div class="location-info">
+            <span class="section-tag"><i class="fa-solid fa-map-location-dot"></i> Kunjungi Kami</span>
+            <h2>Lokasi & Jam Operasional</h2>
+            <p>Temukan ketenangan di sudut terbaik Tangerang. Kopi Senja siap menyambut kedatangan Anda setiap hari.</p>
+
+            <div class="location-details-list">
+              <div class="loc-detail-item">
+                <i class="fa-solid fa-location-dot loc-icon"></i>
+                <div>
+                  <h4>Alamat Lengkap</h4>
+                  <p>Jl. Boulevard Gading Serpong No. 18, Kel. Pakulonan Barat, Kec. Kelapa Dua, Tangerang, Banten 15810</p>
+                </div>
+              </div>
+
+              <div class="loc-detail-item">
+                <i class="fa-solid fa-clock loc-icon"></i>
+                <div>
+                  <h4>Jam Buka Cafe</h4>
+                  <p>Senin – Minggu (Setiap Hari): <strong>08.00 – 22.00 WIB</strong></p>
+                </div>
+              </div>
+
+              <div class="loc-detail-item">
+                <i class="fa-solid fa-phone loc-icon"></i>
+                <div>
+                  <h4>Kontak & Layanan</h4>
+                  <p>WhatsApp: <a href="https://wa.me/6281234567890" target="_blank" rel="noopener">0812-3456-7890</a></p>
+                  <p>Telepon: (021) 555-7890</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-connect-bar pkg-growth-up">
+              <h4>Ikuti Media Sosial Kami:</h4>
+              <div class="social-links">
+                <a href="#" class="social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i> @kopisenja.tangerang</a>
+                <a href="#" class="social-btn" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i> @kopisenja.official</a>
+                <a href="https://wa.me/6281234567890" class="social-btn" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i> Chat WhatsApp</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="location-map-wrapper">
+            <div class="map-styled-card">
+              <div class="map-card-header">
+                <div class="map-pin-pulse"></div>
+                <div>
+                  <h4>KOPI SENJA TANGERANG</h4>
+                  <span>Gading Serpong, Banten</span>
+                </div>
+              </div>
+              <div class="map-illustration">
+                <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=800&q=80" alt="Map Visual Location" loading="lazy">
+                <div class="map-overlay-badge">
+                  <i class="fa-solid fa-diamond-turn-right"></i> 5 Menit dari Summarecon Mall Serpong
+                </div>
+              </div>
+              <div class="map-card-footer">
+                <a href="https://maps.google.com" target="_blank" rel="noopener" class="btn btn-primary btn-block">
+                  <i class="fa-solid fa-up-right-from-square"></i> Buka Petunjuk Jalan di Google Maps
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!-- CAFE FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <div class="nav-brand">
+            <i class="fa-solid fa-mug-hot brand-icon"></i>
+            <span class="brand-name">KOPI SENJA</span>
+          </div>
+          <p class="footer-tagline">"Tempat kecil untuk cerita yang panjang."</p>
+          <p class="footer-desc">Specialty coffee shop & kitchen di Tangerang, Banten. Menyajikan racikan kopi terbaik, makanan hangat, dan ruang kerja berkonsep estetis.</p>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Navigasi Cepat</h4>
+          <ul>
+            <li><a href="#hero">Beranda</a></li>
+            <li><a href="#about">Tentang Kami</a></li>
+            <li><a href="menu.html">Menu Digital</a></li>
+            <li><a href="#gallery">Galeri</a></li>
+            <li><a href="#facilities">Fasilitas Cafe</a></li>
+            <li><a href="#location">Lokasi & Jam Buka</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact-col">
+          <h4>Hubungi Kopi Senja</h4>
+          <p><i class="fa-solid fa-location-dot"></i> Gading Serpong, Tangerang, Banten</p>
+          <p><i class="fa-solid fa-clock"></i> Buka Setiap Hari: 08.00 - 22.00 WIB</p>
+          <p><i class="fa-brands fa-whatsapp"></i> WhatsApp: 0812-3456-7890</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-content">
+          <p>&copy; 2026 KOPI SENJA Tangerang. All rights reserved.</p>
+          <p class="demo-footer-note"><i class="fa-solid fa-laptop-code"></i> Freelance Web Developer Demo Template • Created with Vanilla HTML, CSS & JS.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+    <!-- PACKAGE COMPARISON TABLE SECTION -->
+    <section class="package-comparison-section section-padding" id="package-comparison">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag"><i class="fa-solid fa-table-columns"></i> Perbandingan Fitur</span>
+          <h2 class="section-title">Choose the Right Package for Your Business</h2>
+          <p class="section-subtitle">Bandingkan kelengkapan fitur dari masing-masing paket pembuatan website cafe.</p>
+        </div>
+
+        <div class="table-responsive">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th class="col-feature">Fitur & Kapabilitas Website</th>
+                <th class="col-pkg col-starter" id="th-starter">
+                  <div class="th-title">STARTER</div>
+                  <div class="th-sub">Basic Online Presence</div>
+                </th>
+                <th class="col-pkg col-growth" id="th-growth">
+                  <div class="th-badge">RECOMMENDED</div>
+                  <div class="th-title">GROWTH</div>
+                  <div class="th-sub">Visitors to Customers</div>
+                </th>
+                <th class="col-pkg col-premium" id="th-premium">
+                  <div class="th-title">PREMIUM</div>
+                  <div class="th-sub">AI Customer Experience</div>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="feature-name"><i class="fa-solid fa-desktop"></i> Desain Website Profesional & Modern</td>
+                <td class="col-starter text-center check"><i class="fa-solid fa-check"></i></td>
+                <td class="col-growth text-center check"><i class="fa-solid fa-check"></i></td>
+                <td class="col-premium text-center check"><i class="fa-solid fa-check"></i></td>
+              </tr>
+              <tr>
+                <td class="feature-name"><i class="fa-solid fa-book-open"></i> Menu Digital Interaktif (Bisa Difilter per Kategori)</td>
+                <td class="col-starter text-center check"><i class="fa-solid fa-check"></i></td>
+                <td class="col-growth text-center check"><i class="fa-solid fa-check"></i></td>
+                <td class="col-premium text-center check"><i class="fa-solid fa-check"></i></td>
+              </tr>
+              <tr>
+                <td class="feature-name"><i class="fa-solid fa-images"></i> Galeri Foto Suasana Cafe</td>
+                <td class="col-starter text-center check"><i class="fa-solid fa-check"></i></td>
+                <td class="col-growth text-center check"><i class="fa-solid fa-check"></i></td>
+                <td class="col-premium text-center check"><i class="fa-solid fa-check"></i></td>
+              </tr>
+              <tr>
+                <td class="feature-name"><i class="fa-solid fa-map-location-dot"></i> Peta Lokasi & Jam Buka</td>
+                <td class="col-starter text-center check"><i class="fa-solid fa-check"></i></td>
+                <td class="col-growth text-center check"><i class="fa-solid fa-check"></i></td>
+                <td class="col-premium text-center check"><i class="fa-solid fa-check"></i></td>
+              </tr>
+              <tr>
+                <td class="feature-name"><i class="fa-brands fa-whatsapp"></i> Tombol Chat WhatsApp Langsung</td>
+                <td class="col-starter text-center check"><i class="fa-solid fa-check"></i></td>
+                <td class="col-growth text-center check"><i class="fa-solid fa-check"></i></td>
+                <td class="col-premium text-center check"><i class="fa-solid fa-check"></i></td>
+              </tr>
+              <tr>
+                <td class="feature-name"><i class="fa-solid fa-calendar-plus"></i> Formulir Reservasi Meja Online</td>
+                <td class="col-starter text-center dash">—</td>
+                <td class="col-growth text-center check"><i class="fa-solid fa-check"></i></td>
+                <td class="col-premium text-center check"><i class="fa-solid fa-check"></i></td>
+              </tr>
+              <tr>
+                <td class="feature-name"><i class="fa-solid fa-paper-plane"></i> Pesan WhatsApp Otomatis Tersusun Rapi</td>
+                <td class="col-starter text-center dash">—</td>
+                <td class="col-growth text-center check"><i class="fa-solid fa-check"></i></td>
+                <td class="col-premium text-center check"><i class="fa-solid fa-check"></i></td>
+              </tr>
+              <tr>
+                <td class="feature-name"><i class="fa-solid fa-comments"></i> Ulasan & Testimoni Pelanggan</td>
+                <td class="col-starter text-center dash">—</td>
+                <td class="col-growth text-center check"><i class="fa-solid fa-check"></i></td>
+                <td class="col-premium text-center check"><i class="fa-solid fa-check"></i></td>
+              </tr>
+              <tr>
+                <td class="feature-name"><i class="fa-solid fa-share-nodes"></i> Terhubung ke Instagram & TikTok</td>
+                <td class="col-starter text-center dash">—</td>
+                <td class="col-growth text-center check"><i class="fa-solid fa-check"></i></td>
+                <td class="col-premium text-center check"><i class="fa-solid fa-check"></i></td>
+              </tr>
+              <tr>
+                <td class="feature-name"><i class="fa-solid fa-chart-line"></i> Analisa Performa Website</td>
+                <td class="col-starter text-center dash">—</td>
+                <td class="col-growth text-center check"><i class="fa-solid fa-check"></i></td>
+                <td class="col-premium text-center check"><i class="fa-solid fa-check"></i></td>
+              </tr>
+              <tr>
+                <td class="feature-name"><i class="fa-solid fa-robot"></i> Asisten Chat AI 24 Jam untuk Customer</td>
+                <td class="col-starter text-center dash">—</td>
+                <td class="col-growth text-center dash">—</td>
+                <td class="col-premium text-center check highlight-ai"><i class="fa-solid fa-check"></i></td>
+              </tr>
+              <tr>
+                <td class="feature-name"><i class="fa-solid fa-brain"></i> AI yang Paham Detail Bisnis Anda (Menu, Promo, dll)</td>
+                <td class="col-starter text-center dash">—</td>
+                <td class="col-growth text-center dash">—</td>
+                <td class="col-premium text-center check highlight-ai"><i class="fa-solid fa-check"></i></td>
+              </tr>
+              <tr>
+                <td class="feature-name"><i class="fa-solid fa-screwdriver-wrench"></i> Gratis Maintenance Website</td>
+                <td class="col-starter text-center dash">—</td>
+                <td class="col-growth text-center check"><i class="fa-solid fa-check"></i> <span class="check-duration">1 Bulan</span></td>
+                <td class="col-premium text-center check"><i class="fa-solid fa-check"></i> <span class="check-duration">2 Bulan</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- FLOATING WHATSAPP BUTTON WITH EXPANDABLE HOVER -->
+  <a href="https://wa.me/6281234567890?text=Halo%20Kopi%20Senja,%20saya%20ingin%20menanyakan%20reservasi%20tempat" target="_blank" rel="noopener" class="floating-wa-btn" id="floating-wa-btn" aria-label="Reservasi Sekarang via WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="floating-wa-label">Reservasi Sekarang</span>
+  </a>
+
+  <!-- JAVASCRIPT -->
+  <script src="script.js"></script>
+  <!-- CALL TO ACTION / BUSINESS BENEFITS SECTION -->
+    <section class="cta-section" id="cta">
+      <div class="container">
+        <div class="cta-card">
+          <div class="cta-content text-center">
+            <span class="cta-tag"><i class="fa-solid fa-rocket"></i> Siap Meningkatkan Omzet Cafe Anda?</span>
+            <h2>Wujudkan Website Impian Cafe Anda Hari Ini</h2>
+            <p>Dapatkan presensi digital profesional, sistem reservasi instan, dan asisten AI pintar yang siap meningkatkan penjualan bisnis kuliner Anda.</p>
+            <div class="cta-buttons">
+              <a href="https://wa.me/6285718528435?text=Halo%20kak,%20saya%20tertarik%20dengan%20paket%20website%20cafe%20Kopi%20Senja" target="_blank" rel="noopener" class="btn btn-primary btn-lg">
+                <i class="fa-brands fa-whatsapp"></i> Konsultasi Paket Website
+              </a>
+              <a href="#developer-demo" class="btn btn-outline btn-lg">
+                <i class="fa-solid fa-arrow-down"></i> Lihat Penawaran Paket Jasa
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
